@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5569527649025836798
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4408671791481007845, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b16d5481e503a5f49954bf260aaf0a4f, type: 2}
+    - target: {fileID: 5207227212556938206, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06561612a082712459b4c3634c59607c, type: 3}
+    - target: {fileID: 5800168961330203515, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800168961330203515, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8480795
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800168961330203515, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.07308671
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800168961330203515, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.496902
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800168961330203515, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800168961330203515, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800168961330203515, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800168961330203515, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800168961330203515, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800168961330203515, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800168961330203515, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994216339500156392, guid: a130db8cc41ff834ea526e4c638a02ad,
+        type: 3}
+      propertyPath: m_Name
+      value: BouncyCube_Yellow
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a130db8cc41ff834ea526e4c638a02ad, type: 3}
