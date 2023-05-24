@@ -2272,6 +2272,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185877647}
   m_CullTransparentMesh: 1
+--- !u!1 &188433532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 188433534}
+  - component: {fileID: 188433533}
+  m_Layer: 0
+  m_Name: AnchorsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &188433533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188433532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc44dbb7ffa568a4c9f167e9bbcf38b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eyeTracker: {fileID: 0}
+  eyeTrackerMenu: {fileID: 0}
+  eyeTrackingText: {fileID: 0}
+  MeshController: {fileID: 0}
+  stickyNote: {fileID: 0}
+  stickyPlacementIndicator: {fileID: 0}
+  openSpaceButton: {fileID: 0}
+  continueButton: {fileID: 0}
+  spatialMenu: {fileID: 0}
+  menuSpatialText: {fileID: 0}
+  menuSpacesText: {fileID: 0}
+  OnStickyObjectHit:
+    m_PersistentCalls:
+      m_Calls: []
+  SearchInterval: 10
+--- !u!4 &188433534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188433532}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &190951051
 GameObject:
   m_ObjectHideFlags: 0
@@ -8914,6 +8973,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1362356301605027474, guid: e086334a94d40a04dab99bfe1d69cd74,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14359,6 +14423,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 573618167}
     m_Modifications:
+    - target: {fileID: 7754169028895442044, guid: e0bed2f1b8beb53498e7e2944b45febd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7767606164319488912, guid: e0bed2f1b8beb53498e7e2944b45febd,
         type: 3}
       propertyPath: m_Name
