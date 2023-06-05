@@ -354,28 +354,28 @@ public class SpatialAnchorController : MonoBehaviour
     private void Bumper_performed(InputAction.CallbackContext obj)
     {
 
-            //Create an anchor for the placed note
-            MLAnchors.Anchor.Create(stickyPose, 300, out MLAnchors.Anchor anchor);
-            //Publish the anchor
-            var result = anchor.Publish();
-            if (result.IsOk)
-            {   //instantiate a new stickynote in the same location as the placement indicator.     
-                var persistentObject = Instantiate(stickyNote, stickyPlacementIndicator.transform.position, stickyPlacementIndicator.transform.rotation);
-                TextMeshProUGUI stickyTextToSave = persistentObject.GetComponentInChildren<TextMeshProUGUI>();
+            ////Create an anchor for the placed note
+            ////MLAnchors.Anchor.Create(stickyPose, 300, out MLAnchors.Anchor anchor);
+            ////Publish the anchor
+            //var result = anchor.Publish();
+            //if (result.IsOk)
+            //{   //instantiate a new stickynote in the same location as the placement indicator.     
+            //    var persistentObject = Instantiate(stickyNote, stickyPlacementIndicator.transform.position, stickyPlacementIndicator.transform.rotation);
+            //    TextMeshProUGUI stickyTextToSave = persistentObject.GetComponentInChildren<TextMeshProUGUI>();
                 
-                //Grab a random text from the sticky note text dictionary
-                string randomText = myReminders[UnityEngine.Random.Range(0, myReminders.Count)];
-                stickyTextToSave.text = randomText; //Just some placeholder text for now
-                //this is just for debugging, can be removed.
-                Debug.Log("this is the persistent object ID" + persistentObject.GetInstanceID());
+            //    //Grab a random text from the sticky note text dictionary
+            //    string randomText = myReminders[UnityEngine.Random.Range(0, myReminders.Count)];
+            //    stickyTextToSave.text = randomText; //Just some placeholder text for now
+            //    //this is just for debugging, can be removed.
+            //    Debug.Log("this is the persistent object ID" + persistentObject.GetInstanceID());
 
-                SimpleAnchorBinding savedAnchor = new SimpleAnchorBinding();
-               // savedAnchor.Bind(anchor, stickyTextToSave.text, stickyNote.name);
+            //    SimpleAnchorBinding savedAnchor = new SimpleAnchorBinding();
+            //   // savedAnchor.Bind(anchor, stickyTextToSave.text, stickyNote.name);
                 
-                _persistentObjectsById.Add(anchor.Id, persistentObject.GetInstanceID());
-                SimpleAnchorBinding.Storage.SaveToFile();
+            //    _persistentObjectsById.Add(anchor.Id, persistentObject.GetInstanceID());
+            //    SimpleAnchorBinding.Storage.SaveToFile();
                
-            }
+            //}
 
 
         

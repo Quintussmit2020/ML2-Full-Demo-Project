@@ -28,9 +28,6 @@ namespace MagicLeap.Examples
         private HandTracking.HandType _handType = HandTracking.HandType.Left;
 #pragma warning restore 414
 
-        [SerializeField, Tooltip("The GameObject to use for the Hand Center.")]
-        private Transform _center = null;
-
         [Header("Hand Keypoint Colors")]
 
         [SerializeField, Tooltip("The color assigned to the pinky finger keypoints.")]
@@ -75,18 +72,7 @@ namespace MagicLeap.Examples
 
         private InputDevice handDevice;
 
-        /// <summary>
-        /// Initializes the lists of hand transforms.
-        /// </summary>
-        void Start()
-        {
-            if (_center == null)
-            {
-                Debug.LogError("Error: HandVisualizer._center is not set, disabling script.");
-                enabled = false;
-                return;
-            }
-        }
+    
 
         /// <summary>
         /// Update the keypoint positions.
@@ -109,9 +95,9 @@ namespace MagicLeap.Examples
             for (int i = 0; i < this._pinkyFingerBones.Count; ++i)
             {
                 this._pinkyFingerBones[i].TryGetPosition(out Vector3 bonePosition);
-                this._pinkyFinger[i].localPosition = bonePosition;
+                this._pinkyFinger[i].position = bonePosition;
                 this._pinkyFingerBones[i].TryGetRotation(out Quaternion boneRotation);
-                this._pinkyFinger[i].localRotation = boneRotation;
+                this._pinkyFinger[i].rotation = boneRotation;
                 this._pinkyFinger[i].gameObject.SetActive(highConfidence && HandTracking.GetKeyPointStatus(this.handDevice, HandTracking.KeyPointLocation.Pinky, i));
             }
 
@@ -119,9 +105,9 @@ namespace MagicLeap.Examples
             for (int i = 0; i < this._ringFingerBones.Count; ++i)
             {
                 this._ringFingerBones[i].TryGetPosition(out Vector3 bonePosition);
-                this._ringFinger[i].localPosition = bonePosition;
+                this._ringFinger[i].position = bonePosition;
                 this._ringFingerBones[i].TryGetRotation(out Quaternion boneRotation);
-                this._ringFinger[i].localRotation = boneRotation;
+                this._ringFinger[i].rotation = boneRotation;
                 this._ringFinger[i].gameObject.SetActive(highConfidence && HandTracking.GetKeyPointStatus(this.handDevice, HandTracking.KeyPointLocation.Ring, i));
             }
 
@@ -129,9 +115,9 @@ namespace MagicLeap.Examples
             for (int i = 0; i < this._middleFingerBones.Count; ++i)
             {
                 this._middleFingerBones[i].TryGetPosition(out Vector3 bonePosition);
-                this._middleFinger[i].localPosition = bonePosition;
+                this._middleFinger[i].position = bonePosition;
                 this._middleFingerBones[i].TryGetRotation(out Quaternion boneRotation);
-                this._middleFinger[i].localRotation = boneRotation;
+                this._middleFinger[i].rotation = boneRotation;
                 this._middleFinger[i].gameObject.SetActive(highConfidence && HandTracking.GetKeyPointStatus(this.handDevice, HandTracking.KeyPointLocation.Middle, i));
             }
 
@@ -139,9 +125,9 @@ namespace MagicLeap.Examples
             for (int i = 0; i < this._indexFingerBones.Count; ++i)
             {
                 this._indexFingerBones[i].TryGetPosition(out Vector3 bonePosition);
-                this._indexFinger[i].localPosition = bonePosition;
+                this._indexFinger[i].position = bonePosition;
                 this._indexFingerBones[i].TryGetRotation(out Quaternion boneRotation);
-                this._indexFinger[i].localRotation = boneRotation;
+                this._indexFinger[i].rotation = boneRotation;
                 this._indexFinger[i].gameObject.SetActive(highConfidence && HandTracking.GetKeyPointStatus(this.handDevice, HandTracking.KeyPointLocation.Index, i));
             }
 
@@ -149,9 +135,9 @@ namespace MagicLeap.Examples
             for (int i = 0; i < this._thumbBones.Count; ++i)
             {
                 this._thumbBones[i].TryGetPosition(out Vector3 bonePosition);
-                this._thumb[i].localPosition = bonePosition;
+                this._thumb[i].position = bonePosition;
                 this._thumbBones[i].TryGetRotation(out Quaternion boneRotation);
-                this._thumb[i].localRotation = boneRotation;
+                this._thumb[i].rotation = boneRotation;
                 this._thumb[i].gameObject.SetActive(highConfidence && HandTracking.GetKeyPointStatus(this.handDevice, HandTracking.KeyPointLocation.Thumb, i));
             }
 
@@ -159,20 +145,15 @@ namespace MagicLeap.Examples
             for (int i = 0; i < this._wristBones.Count; ++i)
             {
                 this._wristBones[i].TryGetPosition(out Vector3 bonePosition);
-                this._wrist[i].localPosition = bonePosition;
+                this._wrist[i].position = bonePosition;
                 this._wristBones[i].TryGetRotation(out Quaternion boneRotation);
-                this._wrist[i].localRotation = boneRotation;
+                this._wrist[i].rotation = boneRotation;
                 this._wrist[i].gameObject.SetActive(highConfidence && HandTracking.GetKeyPointStatus(this.handDevice, HandTracking.KeyPointLocation.Wrist, i));
             }
 
             handDevice.TryGetFeatureValue(CommonUsages.devicePosition, out Vector3 devicePosition);
             handDevice.TryGetFeatureValue(CommonUsages.deviceRotation, out Quaternion deviceRotation);
 
-            // Hand Center
-            _center.localPosition = devicePosition;
-            _center.localRotation = deviceRotation;
-            // Hand Center only has one keypoint so its' index would be 0 for getting its' status.
-            _center.gameObject.SetActive(highConfidence && HandTracking.GetKeyPointStatus(this.handDevice, HandTracking.KeyPointLocation.Center, 0));
         }
 
         private void GetFingerBones()
