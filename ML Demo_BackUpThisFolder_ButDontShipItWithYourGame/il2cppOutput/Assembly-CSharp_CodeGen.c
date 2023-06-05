@@ -113,6 +113,15 @@ extern void CubeManager__ctor_mA6679A2514450BA3F3C581F8557ABCAA2901DE4D (void);
 extern void deleteme_Start_mB9DB014375BB35C2288D1DAA78CC2E24E835D3D1 (void);
 extern void deleteme_Update_m025BA6D9034BB964EC204BE4A1EE752FB2381D57 (void);
 extern void deleteme__ctor_mB80B33D888649BD7554018B7DF0D3FD73AC01B0F (void);
+extern void HandTrackingInputExample_Start_mC164A347959920A079BE308F62947AE19EF50200 (void);
+extern void HandTrackingInputExample__ctor_m172CA3066650F6B7A2EA988C41131080D483AC91 (void);
+extern void XRIHandController_get_HandNode_mB2F44F5F5F8E078F7CB97278DB3F5C43A32A47E9 (void);
+extern void XRIHandController_Awake_mCAC65C7D34DA9574CE1CEC92CDBF957B3C8F693E (void);
+extern void XRIHandController_UpdateInput_mFAAD5E733D9DD1D8DD17217B4F78283A4D19E100 (void);
+extern void XRIHandController_UpdateTrackingInput_m9AB800574F300B1CA42FBB609C7D400F496359FA (void);
+extern void XRIHandController_UpdateHandRay_mAA52942152B4C5AC97D094D5E666587DA153737F (void);
+extern void XRIHandController_GetPinch_mDFB5CE60FF881B30ACC3C4939CB4529F6E37702F (void);
+extern void XRIHandController__ctor_m49DC3906E34CCC62CB56033EEAC05F4011299022 (void);
 extern void HandController_Start_m83BA4ED4B162A79177B32DCFCAC05906D4AD8A94 (void);
 extern void HandController_Openhands_m6DB1DB882358F55BE88A9D6CCA8842F9B43A410D (void);
 extern void HandController__ctor_mC7FBA1DBB0123D91F5AA40872B63ABCFD650884F (void);
@@ -338,13 +347,6 @@ extern void Webviewcontroller_Update_m37D5ED6A91E180E6DD4C41BD4D6F459F9C630DCA (
 extern void Webviewcontroller_PermissionCallbacks_OnPermissionDenied_m3DAE19AD8500C1019466A2097C9C6F443BBA8616 (void);
 extern void Webviewcontroller_PermissionCallbacks_OnPermissionGranted_m19F77DA3B65891FBCA0CFA40019025215DC6F694 (void);
 extern void Webviewcontroller__ctor_m9331F653A6201993DE7BF8041922096113201D82 (void);
-extern void XRIHandController_get_HandNode_mB2F44F5F5F8E078F7CB97278DB3F5C43A32A47E9 (void);
-extern void XRIHandController_Awake_mCAC65C7D34DA9574CE1CEC92CDBF957B3C8F693E (void);
-extern void XRIHandController_UpdateInput_mFAAD5E733D9DD1D8DD17217B4F78283A4D19E100 (void);
-extern void XRIHandController_UpdateTrackingInput_m9AB800574F300B1CA42FBB609C7D400F496359FA (void);
-extern void XRIHandController_UpdateHandRay_mAA52942152B4C5AC97D094D5E666587DA153737F (void);
-extern void XRIHandController_GetPinch_mDFB5CE60FF881B30ACC3C4939CB4529F6E37702F (void);
-extern void XRIHandController__ctor_m49DC3906E34CCC62CB56033EEAC05F4011299022 (void);
 extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_IsEditorOnly_m59E10A16B0BDEA496377805E39C3D90B1E2C4815 (void);
@@ -1119,7 +1121,7 @@ extern void HandVisualizer_GetFingerBones_m8137EF9190765188F937E2723ECD534433EEF
 extern void HandVisualizer_Initialize_m56B2F504E02AF19955E262D49B87595FBE93B71E (void);
 extern void HandVisualizer_CreateKeyPoint_m63B38CE711C18FFCFB5BB5304400A1D8B44275FC (void);
 extern void HandVisualizer__ctor_mCC2B6923378D60540C16AEBB96AA6A33F4D1098D (void);
-static Il2CppMethodPointer s_methodPointers[1127] = 
+static Il2CppMethodPointer s_methodPointers[1129] = 
 {
 	GameEnding_OnTriggerEnter_m33373FE821E07AC4CAE2F7CD0F5216C04DE457C1,
 	GameEnding_CaughtPlayer_m4BB3BA8A69A8E5722D1C497CB1601388289DA256,
@@ -1222,6 +1224,15 @@ static Il2CppMethodPointer s_methodPointers[1127] =
 	deleteme_Start_mB9DB014375BB35C2288D1DAA78CC2E24E835D3D1,
 	deleteme_Update_m025BA6D9034BB964EC204BE4A1EE752FB2381D57,
 	deleteme__ctor_mB80B33D888649BD7554018B7DF0D3FD73AC01B0F,
+	HandTrackingInputExample_Start_mC164A347959920A079BE308F62947AE19EF50200,
+	HandTrackingInputExample__ctor_m172CA3066650F6B7A2EA988C41131080D483AC91,
+	XRIHandController_get_HandNode_mB2F44F5F5F8E078F7CB97278DB3F5C43A32A47E9,
+	XRIHandController_Awake_mCAC65C7D34DA9574CE1CEC92CDBF957B3C8F693E,
+	XRIHandController_UpdateInput_mFAAD5E733D9DD1D8DD17217B4F78283A4D19E100,
+	XRIHandController_UpdateTrackingInput_m9AB800574F300B1CA42FBB609C7D400F496359FA,
+	XRIHandController_UpdateHandRay_mAA52942152B4C5AC97D094D5E666587DA153737F,
+	XRIHandController_GetPinch_mDFB5CE60FF881B30ACC3C4939CB4529F6E37702F,
+	XRIHandController__ctor_m49DC3906E34CCC62CB56033EEAC05F4011299022,
 	HandController_Start_m83BA4ED4B162A79177B32DCFCAC05906D4AD8A94,
 	HandController_Openhands_m6DB1DB882358F55BE88A9D6CCA8842F9B43A410D,
 	HandController__ctor_mC7FBA1DBB0123D91F5AA40872B63ABCFD650884F,
@@ -1464,13 +1475,6 @@ static Il2CppMethodPointer s_methodPointers[1127] =
 	Webviewcontroller_PermissionCallbacks_OnPermissionDenied_m3DAE19AD8500C1019466A2097C9C6F443BBA8616,
 	Webviewcontroller_PermissionCallbacks_OnPermissionGranted_m19F77DA3B65891FBCA0CFA40019025215DC6F694,
 	Webviewcontroller__ctor_m9331F653A6201993DE7BF8041922096113201D82,
-	XRIHandController_get_HandNode_mB2F44F5F5F8E078F7CB97278DB3F5C43A32A47E9,
-	XRIHandController_Awake_mCAC65C7D34DA9574CE1CEC92CDBF957B3C8F693E,
-	XRIHandController_UpdateInput_mFAAD5E733D9DD1D8DD17217B4F78283A4D19E100,
-	XRIHandController_UpdateTrackingInput_m9AB800574F300B1CA42FBB609C7D400F496359FA,
-	XRIHandController_UpdateHandRay_mAA52942152B4C5AC97D094D5E666587DA153737F,
-	XRIHandController_GetPinch_mDFB5CE60FF881B30ACC3C4939CB4529F6E37702F,
-	XRIHandController__ctor_m49DC3906E34CCC62CB56033EEAC05F4011299022,
 	Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6,
 	Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_IsEditorOnly_m59E10A16B0BDEA496377805E39C3D90B1E2C4815,
@@ -2255,12 +2259,12 @@ extern void U3CCreateLocalMediaStreamU3Ed__61_MoveNext_mD2F9C6B9B6A69150ACAB40E6
 extern void U3CCreateLocalMediaStreamU3Ed__61_SetStateMachine_m59DB7BA0EB2CE688F2ABA4EB024405F9A954A94C_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[4] = 
 {
-	{ 0x060003E9, U3CU3CLoginU3Eb__60_0U3Ed_MoveNext_mA1BD64CE5E29F2BBAF69E897D79BA58229F9B5AB_AdjustorThunk },
-	{ 0x060003EA, U3CU3CLoginU3Eb__60_0U3Ed_SetStateMachine_m3364A90F81D4BB9E98619037CCB07F0893ADA948_AdjustorThunk },
-	{ 0x060003EB, U3CCreateLocalMediaStreamU3Ed__61_MoveNext_mD2F9C6B9B6A69150ACAB40E629276569E205C721_AdjustorThunk },
-	{ 0x060003EC, U3CCreateLocalMediaStreamU3Ed__61_SetStateMachine_m59DB7BA0EB2CE688F2ABA4EB024405F9A954A94C_AdjustorThunk },
+	{ 0x060003EB, U3CU3CLoginU3Eb__60_0U3Ed_MoveNext_mA1BD64CE5E29F2BBAF69E897D79BA58229F9B5AB_AdjustorThunk },
+	{ 0x060003EC, U3CU3CLoginU3Eb__60_0U3Ed_SetStateMachine_m3364A90F81D4BB9E98619037CCB07F0893ADA948_AdjustorThunk },
+	{ 0x060003ED, U3CCreateLocalMediaStreamU3Ed__61_MoveNext_mD2F9C6B9B6A69150ACAB40E629276569E205C721_AdjustorThunk },
+	{ 0x060003EE, U3CCreateLocalMediaStreamU3Ed__61_SetStateMachine_m59DB7BA0EB2CE688F2ABA4EB024405F9A954A94C_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[1127] = 
+static const int32_t s_InvokerIndices[1129] = 
 {
 	7533,
 	9736,
@@ -2362,6 +2366,15 @@ static const int32_t s_InvokerIndices[1127] =
 	9736,
 	9736,
 	9736,
+	9736,
+	9736,
+	9736,
+	9547,
+	9736,
+	7533,
+	7533,
+	9611,
+	9461,
 	9736,
 	9736,
 	7397,
@@ -2604,13 +2617,6 @@ static const int32_t s_InvokerIndices[1127] =
 	9736,
 	7533,
 	7533,
-	9736,
-	9547,
-	9736,
-	7533,
-	7533,
-	9611,
-	9461,
 	9736,
 	9736,
 	9736,
@@ -3392,13 +3398,13 @@ static const int32_t s_InvokerIndices[1127] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[7] = 
 {
-	{ 0x02000024, { 0, 24 } },
-	{ 0x02000025, { 24, 3 } },
-	{ 0x02000026, { 27, 3 } },
-	{ 0x02000027, { 30, 3 } },
-	{ 0x06000164, { 33, 2 } },
-	{ 0x06000165, { 35, 3 } },
-	{ 0x06000166, { 38, 3 } },
+	{ 0x02000026, { 0, 24 } },
+	{ 0x02000027, { 24, 3 } },
+	{ 0x02000028, { 27, 3 } },
+	{ 0x02000029, { 30, 3 } },
+	{ 0x06000166, { 33, 2 } },
+	{ 0x06000167, { 35, 3 } },
+	{ 0x06000168, { 38, 3 } },
 };
 extern const uint32_t g_rgctx_BindingsLocalStorage_1_t8C1A6975D70A1F25D55B34F70663F62125A983DF;
 extern const uint32_t g_rgctx_SerializeBindings_t09E48D61FC0968D6329C07DAEADF176AFB20930B;
@@ -3489,7 +3495,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	1127,
+	1129,
 	s_methodPointers,
 	4,
 	s_adjustorThunks,
