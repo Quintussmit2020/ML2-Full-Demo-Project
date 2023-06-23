@@ -82,6 +82,8 @@ public class MenuController : MonoBehaviour
         controllerActions.Menu.performed += Menu_performed;
 
         MLPermissions.RequestPermission(MLPermission.VoiceInput, permissionCallbacks);
+
+        MLSegmentedDimmer.Activate();
   }
 
 
