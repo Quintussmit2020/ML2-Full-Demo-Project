@@ -73,6 +73,16 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 31d87d76dfea9d8468b6f280d1588cc0, type: 3}
+    - target: {fileID: 5387774857110666983, guid: b8f3fae9d35339c4da1918cdaddf2c35,
+        type: 3}
+      propertyPath: m_SmoothPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387774857110666983, guid: b8f3fae9d35339c4da1918cdaddf2c35,
+        type: 3}
+      propertyPath: m_SmoothRotation
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7360154305180131257, guid: b8f3fae9d35339c4da1918cdaddf2c35,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
