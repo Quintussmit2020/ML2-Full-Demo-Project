@@ -32143,20 +32143,16 @@ struct MagicLeapSessionSubsystem_t803C826013089175A5DBC891E1BB1AFFE3B9A27B  : pu
 
 struct MarkerController_tE7C992C2C9DC77C450D93CD22B08AB0372D58C33  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	float ___QrCodeMarkerSize_5;
-	float ___ArucoMarkerSize_6;
-	int32_t ___Type_7;
-	int32_t ___ArucoDict_8;
-	Dictionary_2_t0B15A60B00EC883D4249611C6C641C7BED5A71CE* ____markers_9;
-	ASCIIEncoding_tF9196F27377D7DF29CCB21F705EABB07F0ECE0FF* ____asciiEncoder_10;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trackerObject_11;
-	String_t* ___markerID_12;
-	bool ___isScanning_13;
-	MagicLeapInputs_t066A698AC5621BC4741DC253FD872CF81F3A4335* ___magicLeapInputs_14;
-	ControllerActions_tF19954DCC7AE6EC35A7B3D498A74A95E3FB29137 ___controllerActions_15;
-	Callbacks_tA739FB917CC73A143CAA3F44F2CC3D78EC80F6FC* ___permissionCallbacks_16;
-	MenuController_t17F68C6A3294916109B163214554B7F97C7E8427* ___menuController_17;
-	bool ___markerFeature_18;
+	float ___qrCodeMarkerSize_5;
+	float ___arucoMarkerSize_6;
+	int32_t ___markerType_7;
+	int32_t ___arucoDict_8;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trackerObject_9;
+	MagicLeapInputs_t066A698AC5621BC4741DC253FD872CF81F3A4335* ___magicLeapInputs_10;
+	ControllerActions_tF19954DCC7AE6EC35A7B3D498A74A95E3FB29137 ___controllerActions_11;
+	Callbacks_tA739FB917CC73A143CAA3F44F2CC3D78EC80F6FC* ___permissionCallbacks_12;
+	MenuController_t17F68C6A3294916109B163214554B7F97C7E8427* ___menuController_13;
+	bool ___markerFeature_14;
 };
 
 struct MarkerTrackingExample_tD7BEEDAC8EE61EC518CC4B8F644CE7B5D6B20E90  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
