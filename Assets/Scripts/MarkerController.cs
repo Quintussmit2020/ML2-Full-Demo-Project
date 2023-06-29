@@ -127,6 +127,9 @@ public class MarkerController : MonoBehaviour
                     _markers.Add(id, trackerObject);
                     Debug.Log("Marker Found");
                     Debug.Log("Marker ID data is " + id);
+                        //stop the scanning
+                       // MLMarkerTracker.StopScanningAsync();
+
                 }
             }
         }

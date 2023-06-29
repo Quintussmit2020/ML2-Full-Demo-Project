@@ -4043,28 +4043,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 447475201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c42b3ea8c3b2f41add049147d57601, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e0b8570747fa364cab05dab63c40584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statusText: {fileID: 0}
-  markerVisualPrefab: {fileID: 0}
-  markersRoot: {fileID: 3389511489280426780, guid: 0cfcd18af83973c4fbfc5efec316a294,
-    type: 3}
-  removeMarkersUsingTimeStamps: 1
-  markerTrackerTimeout: 0.5
-  MarkerTypes: 1073741810
-  ArucoDicitonary: 9
+  QrCodeMarkerSize: 0.1
   ArucoMarkerSize: 0.1
-  ArucoTrackingCamera: 0
-  QRCodeSize: 0.1
-  TrackerProfile: 0
-  EnableMarkerScanning: 1
-  FPSHint: 0
-  ResolutionHint: 0
-  CameraHint: 0
-  FullAnalysisIntervalHint: 0
-  CornerRefineMethod: 0
-  UseEdgeRefinement: 0
+  Type: 2
+  ArucoDict: 5
+  trackerObject: {fileID: 3911388390451128133, guid: e3016c2ee1e7f8d4ca600c1705284eca,
+    type: 3}
+  markerID: 11
+  menuController: {fileID: 1124732209}
 --- !u!1 &476427103
 GameObject:
   m_ObjectHideFlags: 0
@@ -9172,6 +9161,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 447475202}
     m_Modifications:
+    - target: {fileID: 2046017738376132473, guid: 0cfcd18af83973c4fbfc5efec316a294,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046017738376132473, guid: 0cfcd18af83973c4fbfc5efec316a294,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046017738376132473, guid: 0cfcd18af83973c4fbfc5efec316a294,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3389511489280426780, guid: 0cfcd18af83973c4fbfc5efec316a294,
         type: 3}
       propertyPath: m_Name
